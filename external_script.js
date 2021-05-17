@@ -47,6 +47,31 @@ $("#interest-parent").on("change", function(){
     });
 });
 
+//演習4
+
+    /**名前を入力して送信ボタンを押すとボタンが二度と押せなくなる */
+
+ $("#disable_button").on("click",function(){
+    $("#disable_button").prop("disabled",true);
+  
+ });
+
+ //演習5
+
+    /**メールアドレスが未入力であった場合にアラートが表示される */
+  
+$(function(){
+   $("#email_submit").on("click", function(){
+       if($("#email").val() === ""){
+           alert("メールアドレスを入力してください！");
+       }
+    });
+});
+   
+
+   
+    
+  
 
 
 
